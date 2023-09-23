@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,700&display=swap");
+
+@font-face {
+  font-family: "Clash Display";
+  src: url(./assets/ClashDisplay-Variable.ttf);
+}
+
+.App {
+  background-image: url(./assets/Purple-Lens-Flare-PNG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: hard-light;
+}
+.purple-gradient {
+  background: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+}
+.hero {
+  background-image: url("./assets/man-wearing-smart-glasses-touching-virtual-screen\ 1.png"),
+    url("./assets/Image\ 1.png");
+  background-position: right bottom;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-blend-mode: hard-light;
+}
+.bg-privacy {
+  background-image: url("./assets/Vector\ \(2\).png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+::-webkit-input-placeholder {
+  @apply text-white;
+}
+
+/* Setting up fonts */
+
+h1,
+h2,
+h3,
+h4,
+label,
+button {
+  font-family: "Clash Display", sans-serif;
+}
+p,
+span,
+a {
+  font-family: "Montserrat", sans-serif;
+}
